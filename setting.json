@@ -1,0 +1,210 @@
+{
+    "workbench.colorTheme": "Default Light Modern",
+    "workbench.colorCustomizations": {
+
+  // will change the color of three dots to red
+  "editorHint.foreground": "#ff0000",
+
+  // will underline the entire word with dots in your chosen color
+  // "editorHint.border": "#00ff66"
+},
+
+    "cSpell.diagnosticLevel": "Hint",
+    "files.autoSave": "afterDelay",
+    "todo-tree.filtering.excludeGlobs": ["**/*.csv", "**/*.txt"],
+    "editor.rulers": [80],
+    
+    "todo-tree.highlights.defaultHighlight": {
+      "icon": "alert",
+      "type": "text",
+      "foreground": "black",
+      "background": "white",
+      "opacity": 50,
+      "iconColour": "blue",
+      "gutterIcon": true
+    },
+    "todo-tree.highlights.customHighlight": {
+      "TODO:": {
+        "icon": "checkbox",
+        "foreground": "black",
+        "background": "yellow",
+        "iconColour": "yellow"
+      },
+      "NOTE:": {
+        "icon": "note",
+        "foreground": "white",
+        "background": "cornflowerblue",
+        "iconColour": "cornflowerblue"
+      },
+      "USEFUL:": {
+        "icon": "verified",
+        "foreground": "black",
+        "background": "mediumaquamarine",
+        "iconColour": "mediumaquamarine"
+      },
+      "COMMENT:": {
+        "icon": "comment",
+        "foreground": "white",
+        "background": "gray",
+        "iconColour": "white"
+      },
+      "LEARN:": {
+        "icon": "bookmark",
+        "foreground": "white",
+        "background": "hotpink",
+        "iconColour": "hotpink"
+      },
+      "FIXME:": {
+        "icon": "tools",
+        "foreground": "crimson",
+        "background": "burlywood",
+        "iconColour": "burlywood"
+      },
+      "RECHECK:": {
+        "icon": "codescan",
+        "foreground": "white",
+        "background": "chocolate",
+        "iconColour": "chocolate"
+      },
+      "INCOMPLETE:": {
+        "icon": "alert",
+        "foreground": "white",
+        "background": "mediumvioletred",
+        "iconColour": "mediumvioletred"
+      },
+      "BUG:": {
+        "icon": "bug",
+        "foreground": "white",
+        "background": "crimson",
+        "iconColour": "crimson"
+      },
+      "SEE NOTES": {
+        "icon": "note",
+        "foreground": "white",
+        "background": "teal",
+        "iconColour": "teal"
+      },
+      "POST": {
+        "icon": "share",
+        "foreground": "white",
+        "background": "green",
+        "iconColour": "green"
+      },
+      "[ ]:": {
+        "icon": "check",
+        "foreground": "black",
+        "background": "#ff000080",
+        "iconColour": "#ff000080",
+        "type": "tag"
+      },
+      "[x]:": {
+        "icon": "check",
+        "foreground": "white",
+        "background": "green",
+        "iconColour": "green",
+        "type": "tag"
+      }
+    },
+    "todo-tree.general.tags": [
+      "BUG:",
+      "SEE NOTES",
+      "HACK:",
+      "FIXME:",
+      "RECHECK:",
+      "INCOMPLETE:",
+      "TODO:",
+      "NOTE:",
+      "POST",
+      "USEFUL:",
+      "LEARN:",
+      "COMMENT:",
+      "[ ]:",
+      "[x]:"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*",
+
+    "workbench.iconTheme": "vscode-icons",
+    
+    "editor.tabSize": 2,
+
+    "r.rpath.windows": "C:\\Users\\alldr1\\AppData\\Local\\Programs\\R\\R-4.4.0\\bin\\R.exe",
+    "r.rterm.windows": "C:\\Users\\alldr1\\AppData\\Local\\Programs\\R\\R-4.4.0\\bin\\R.exe",
+    "spellright.documentTypes": [
+      "quarto",
+      "markdown",
+      "latex",
+      "plaintext"
+    ],
+    "spellright.language": [
+      "en_AU"
+    ],
+    "cSpell.userWords": [
+      "Alldis",
+      "analyse",
+      "analysed",
+      "analysing",
+      "Barwon",
+      "colour",
+      "colours",
+      "organisation",
+      "organisations",
+      "standardised",
+      "Summarise",
+      "summarised",
+      "summarises",
+      "tokenised",
+      "Treemap",
+      "vcodes",
+      "WSV"
+    ],
+    "cSpell.enableFiletypes": [
+      "!R",
+      "!python",
+      "quarto"
+    ],
+    
+
+
+"SAS.connectionProfiles": {
+        "activeProfile": "SAS 9.4 Prod",
+        "profiles": {
+            "SAS 9.4 Prod": {
+                "connectionType": "iom",
+                "sasOptions": [],
+                "host": "wpusas0201.services.workcover.vic.gov.au",
+                "port": 8591,
+                "username": "ALLDR1"
+            }
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "cSpell.minWordLength": 3,
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    "editor.acceptSuggestionOnEnter": "off",
+    "sshfs.configs": [
+      {
+        "name": "wpusas0201"
+      }
+    ],
+    "python.defaultInterpreterPath": "c:\\Users\\alldr1\\Anaconda3",
+    "cSpell.enabledFileTypes": {
+      "r": false
+    },
+    "workbench.editor.enablePreview": false,
+    "accessibility.signals.terminalCommandFailed": {
+      "sound": "off",
+      "announcement": "off"
+    },
+    "quarto.render.previewType": "external",
+    "diffEditor.maxComputationTime": 0,
+    "git.openRepositoryInParentFolders": "always",
+    "snowflake.connectionsConfigFile": "C:\\Users\\alldr1\\.snowflake\\connections.toml",
+    "python.analysis.typeCheckingMode": "basic",
+    "autoDocstring.startOnNewLine": true,
+    "github.copilot.enable": {
+      "quarto": false,
+      "*": false
+    }
+  }

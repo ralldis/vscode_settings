@@ -1,0 +1,79 @@
+[{
+    "key": "Ctrl+Shift+m",
+    "command": "type",
+    "args": { "text": "%>%\n" },
+    "when": "editorTextFocus && editorLangId == r"
+  },
+
+  {
+    "key": "Alt+`",
+    "command": "type",
+    "args": { "text": "<- " },
+    "when": "editorTextFocus && editorLangId == r"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "jupyter.execSelectionInteractive",
+    "when": "editorTextFocus && isWorkspaceTrusted && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  {
+    "key": "shift+enter",
+    "command": "-jupyter.execSelectionInteractive",
+    "when": "editorTextFocus && isWorkspaceTrusted && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "python.execSelectionInTerminal",
+    "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  {
+    "key": "shift+enter",
+    "command": "-python.execSelectionInTerminal",
+    "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "-workbench.action.chat.open",
+    "when": "hasChatProvider"
+  },
+  // {
+  //   "key": "shift+space",
+  //   "command": "extension.reverseIndentOneSpace",
+  //   "when": "editorTextFocus && !editorReadOnly"
+  // },
+  {
+    "key": "shift+space",
+    "command": "-extension.reverseIndentOneSpace",
+    "when": "editorHasSelection && editorTextFocus && !editorReadOnly"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "-inlineChat.unstash",
+    "when": "inlineChatHasStashedSession && !editorReadonly"
+  },
+
+  {
+    "key": "ctrl+alt+shift+r",
+    "command": "editor.action.insertSnippet",
+    "args": { "name": "fundoc" }
+},
+{
+  "key": "ctrl+x",
+  "command": "-filesExplorer.cut",
+  "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+},
+{
+  "key": "tab",
+  "command": "editor.action.inlineSuggest.commit",
+  "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+},
+{
+  "key": "tab",
+  "command": "-editor.action.inlineSuggest.commit",
+  "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+},
+{
+  "key": "enter",
+  "command": "editor.action.inlineEdit.accept",
+  "when": "cursorAtInlineEdit && inlineEditVisible && !editorReadonly"
+}
