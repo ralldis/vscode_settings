@@ -12,7 +12,7 @@
     "cSpell.diagnosticLevel": "Hint",
     "files.autoSave": "afterDelay",
     "todo-tree.filtering.excludeGlobs": ["**/*.csv", "**/*.txt"],
-    "editor.rulers": [80],
+    "editor.rulers": [80, 100],
     
     "todo-tree.highlights.defaultHighlight": {
       "icon": "alert",
@@ -103,7 +103,13 @@
         "background": "green",
         "iconColour": "green",
         "type": "tag"
-      }
+      },
+      "STRETCH": {
+        "icon": "arrow-up",
+        "foreground": "black",
+        "background": "lime",
+        "iconColour": "green"
+      },
     },
     "todo-tree.general.tags": [
       "BUG:",
@@ -119,7 +125,8 @@
       "LEARN:",
       "COMMENT:",
       "[ ]:",
-      "[x]:"
+      "[x]:",
+      "STRETCH"
     ],
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*",
 
@@ -127,8 +134,8 @@
     
     "editor.tabSize": 2,
 
-    "r.rpath.windows": "C:\\Users\\alldr1\\AppData\\Local\\Programs\\R\\R-4.4.0\\bin\\R.exe",
-    "r.rterm.windows": "C:\\Users\\alldr1\\AppData\\Local\\Programs\\R\\R-4.4.0\\bin\\R.exe",
+    "r.rpath.windows": "C:\\Program Files\\R\\R-4.5.2\\bin\\R.exe",
+    "r.rterm.windows": "C:\\Program Files\\R\\R-4.5.2\\bin\\R.exe",
     "spellright.documentTypes": [
       "quarto",
       "markdown",
@@ -206,5 +213,51 @@
     "github.copilot.enable": {
       "quarto": false,
       "*": false
-    }
+    },
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.editor.empty.hint": "hidden",
+    "[dockercompose]": {
+      "editor.insertSpaces": true,
+      "editor.tabSize": 2,
+      "editor.autoIndent": "advanced",
+      "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+      "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "journal.base": "C:\\Users\\alldr1\\Development\\Personal\\Journal",
+    "journal.templates": [
+      
+      {
+        "name": "memo",
+        "template": "- MEMO ${localTime}: ${input}", 
+        "after": "## Memos"
+      },
+      {
+        "name": "task",
+        "template": "- [] ${d:LL} - Task: ${input}",
+        "after": "## Tasks"
+      },
+      {
+        "name": "entry",
+        "template": "# ${d:dddd, MMMM DD YYYY}\n\n## Tasks\n\n## Notes\n\n## What Went Well ✅\n\n- \n\n## What Didn’t Go Well ❌:\n\n- \n\n## Learnings\n\n- \n\n"
+      },
+      {
+        "name": "time",
+        "template": "${localTime}"
+      },
+      {
+        "name": "note",
+        "template": "# ${input}\n\n${tags}\n"
+      },
+      {
+        "name": "files",
+        "template": "- NOTE: [${title}](${link})",
+        "after": "## Notes"
+      },
+      {
+        "name": "weekly",
+        "template": "# Week ${week}\n\n"
+      }
+    ]
   }
