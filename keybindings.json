@@ -77,3 +77,4 @@
   "command": "editor.action.inlineEdit.accept",
   "when": "cursorAtInlineEdit && inlineEditVisible && !editorReadonly"
 }
+]
