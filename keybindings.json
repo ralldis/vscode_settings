@@ -1,15 +1,14 @@
 [{
     "key": "Ctrl+Shift+m",
     "command": "type",
-    "args": { "text": "%>%\n" },
-    "when": "editorTextFocus && editorLangId == r"
+    "args": { "text": "|>\n" },
+    "when": "editorTextFocus && (editorLangId == r || editorLangId == markdown || editorLangId == quarto)"
   },
-
   {
     "key": "Alt+`",
     "command": "type",
     "args": { "text": "<- " },
-    "when": "editorTextFocus && editorLangId == r"
+    "when": "editorTextFocus && (editorLangId == r || editorLangId == markdown || editorLangId == quarto)"
   },
   {
     "key": "ctrl+enter",
@@ -76,5 +75,15 @@
   "key": "enter",
   "command": "editor.action.inlineEdit.accept",
   "when": "cursorAtInlineEdit && inlineEditVisible && !editorReadonly"
+},
+{
+  "key": "ctrl+shift+g g",
+  "command": "workbench.view.scm",
+  "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+},
+{
+  "key": "ctrl+shift+g g",
+  "command": "-workbench.view.scm",
+  "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
 }
 ]
