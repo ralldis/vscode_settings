@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Default Light Modern",
+    "workbench.colorTheme": "Light Modern",
     "workbench.colorCustomizations": {
 
   // will change the color of three dots to red
@@ -10,20 +10,139 @@
 },
 
     "cSpell.diagnosticLevel": "Hint",
+    "cSpell.language": "en,en-AU",
     "files.autoSave": "afterDelay",
-    "todo-tree.filtering.excludeGlobs": ["**/*.csv", "**/*.txt"],
     "editor.rulers": [80, 100],
+
+    "workbench.iconTheme": "vscode-icons",
     
-    "todo-tree.highlights.defaultHighlight": {
-      "icon": "alert",
-      "type": "text",
-      "foreground": "black",
-      "background": "white",
-      "opacity": 50,
-      "iconColour": "blue",
-      "gutterIcon": true
+    "editor.tabSize": 2,
+
+    "r.rpath.windows": "C:\\Users\\alldr1\\AppData\\Local\\Programs\\R\\R-4.4.0\\bin\\R.exe",
+    "r.rterm.windows": "C:\\Users\\alldr1\\AppData\\Local\\Programs\\R\\R-4.4.0\\bin\\R.exe",
+    "todo-tree.ripgrep": "C:\\Users\\alldr1\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.1.0-x86_64-pc-windows-msvc\\rg.exe",
+    "r.lsp.lintr.enabled": true,
+    "r.lsp.lintr.config": ".lintr",
+    "spellright.documentTypes": [
+      "quarto",
+      "markdown",
+      "latex",
+      "plaintext"
+    ],
+    "spellright.language": [
+      "en_AU"
+    ],
+    "cSpell.userWords": [
+      "Alldis",
+      "analyse",
+      "analysed",
+      "analysing",
+      "Barwon",
+      "colour",
+      "colours",
+      "customisation",
+      "Essendon",
+      "favourite",
+      "organisation",
+      "organisations",
+      "plausibilities",
+      "standardised",
+      "Summarise",
+      "summarised",
+      "summarises",
+      "tokenised",
+      "Treemap",
+      "vcodes",
+      "WSV"
+    ],
+    "cSpell.enableFiletypes": [
+      "!R",
+      "!python",
+      "!sas",
+      "quarto"
+    ],
+    
+
+
+"SAS.connectionProfiles": {
+        "activeProfile": "SAS 9.4 Prod",
+        "profiles": {
+            "SAS 9.4 Prod": {
+                "connectionType": "iom",
+                "sasOptions": [],
+                "host": "wpusas0201.services.workcover.vic.gov.au",
+                "port": 8591,
+                "username": "ALLDR1"
+            }
+        }
     },
-    "todo-tree.highlights.customHighlight": {
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "cSpell.minWordLength": 3,
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    "editor.acceptSuggestionOnEnter": "off",
+    "sshfs.configs": [
+      {
+        "name": "wpusas0201"
+      }
+    ],
+    "python.defaultInterpreterPath": "C:\\Users\\alldr1\\AppData\\Roaming\\uv\\python\\cpython-3.14.0-windows-x86_64-none\\python.exe",
+    "cSpell.enabledFileTypes": {
+      "r": false
+    },
+    "workbench.editor.enablePreview": false,
+    "accessibility.signals.terminalCommandFailed": {
+      "sound": "off",
+      "announcement": "off"
+    },
+    "quarto.render.previewType": "external",
+    "diffEditor.maxComputationTime": 0,
+    "git.openRepositoryInParentFolders": "always",
+    "snowflake.connectionsConfigFile": "C:\\Users\\alldr1\\.snowflake\\connections.toml",
+    "python.analysis.typeCheckingMode": "basic",
+    "autoDocstring.startOnNewLine": true,
+    "github.copilot.enable": {
+      "quarto": false,
+      "*": false
+    },
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.editor.empty.hint": "hidden",
+    "[dockercompose]": {
+      "editor.insertSpaces": true,
+      "editor.tabSize": 2,
+      "editor.autoIndent": "advanced",
+      "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+      "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    // "foam.templates.folder": "C:/Users/alldr1/Development/Personal/work_journal/.foam/templates",
+    // "foam.templates.directory": "C:/Users/alldr1/Development/Personal/work_journal/notes/.foam/templates",
+    // "foam.dailyNotes.directory": "journal",
+    // "foam.dailyNotes.template": "daily-note.md",
+    // "foam.dailyNote.carryOverTasks": true,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "todo-tree.ripgrep.ripgrep": "C:\\Users\\alldr1\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.1.0-x86_64-pc-windows-msvc\\rg.exe",
+    "better-todo-tree.general.tags": [
+      "BUG:",
+      "SEE NOTES",
+      "HACK:",
+      "FIXME:",
+      "RECHECK:",
+      "INCOMPLETE:",
+      "TODO:",
+      "NOTE:",
+      // "POST",
+      "USEFUL:",
+      "LEARN:",
+      "COMMENT:",
+      "[ ]:",
+      "[x]:",
+      "STRETCH"
+    ],
+    "better-todo-tree.highlights.customHighlight": {
       "TODO:": {
         "icon": "checkbox",
         "foreground": "black",
@@ -84,12 +203,12 @@
         "background": "teal",
         "iconColour": "teal"
       },
-      "POST": {
-        "icon": "share",
-        "foreground": "white",
-        "background": "green",
-        "iconColour": "green"
-      },
+      // "POST": {
+      //   "icon": "share",
+      //   "foreground": "white",
+      //   "background": "green",
+      //   "iconColour": "green"
+      // },
       "[ ]:": {
         "icon": "check",
         "foreground": "black",
@@ -109,155 +228,24 @@
         "foreground": "black",
         "background": "lime",
         "iconColour": "green"
-      },
-    },
-    "todo-tree.general.tags": [
-      "BUG:",
-      "SEE NOTES",
-      "HACK:",
-      "FIXME:",
-      "RECHECK:",
-      "INCOMPLETE:",
-      "TODO:",
-      "NOTE:",
-      "POST",
-      "USEFUL:",
-      "LEARN:",
-      "COMMENT:",
-      "[ ]:",
-      "[x]:",
-      "STRETCH"
-    ],
-    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*",
-
-    "workbench.iconTheme": "vscode-icons",
-    
-    "editor.tabSize": 2,
-
-    "r.rpath.windows": "C:\\Program Files\\R\\R-4.5.2\\bin\\R.exe",
-    "r.rterm.windows": "C:\\Program Files\\R\\R-4.5.2\\bin\\R.exe",
-    "spellright.documentTypes": [
-      "quarto",
-      "markdown",
-      "latex",
-      "plaintext"
-    ],
-    "spellright.language": [
-      "en_AU"
-    ],
-    "cSpell.userWords": [
-      "Alldis",
-      "analyse",
-      "analysed",
-      "analysing",
-      "Barwon",
-      "colour",
-      "colours",
-      "organisation",
-      "organisations",
-      "standardised",
-      "Summarise",
-      "summarised",
-      "summarises",
-      "tokenised",
-      "Treemap",
-      "vcodes",
-      "WSV"
-    ],
-    "cSpell.enableFiletypes": [
-      "!R",
-      "!python",
-      "quarto"
-    ],
-    
-
-
-"SAS.connectionProfiles": {
-        "activeProfile": "SAS 9.4 Prod",
-        "profiles": {
-            "SAS 9.4 Prod": {
-                "connectionType": "iom",
-                "sasOptions": [],
-                "host": "wpusas0201.services.workcover.vic.gov.au",
-                "port": 8591,
-                "username": "ALLDR1"
-            }
-        }
-    },
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "git.confirmSync": false,
-    "git.enableSmartCommit": true,
-    "cSpell.minWordLength": 3,
-    "editor.suggest.snippetsPreventQuickSuggestions": true,
-    "editor.acceptSuggestionOnEnter": "off",
-    "sshfs.configs": [
-      {
-        "name": "wpusas0201"
       }
+    },
+    "better-todo-tree.highlights.defaultHighlight": {
+      "icon": "alert",
+      "type": "text",
+      "foreground": "black",
+      "background": "white",
+      "opacity": 50,
+      "iconColour": "blue",
+      "gutterIcon": true
+    },
+    "better-todo-tree.filtering.excludeGlobs": [
+      "**/*.csv",
+      "**/*.txt"
     ],
-    "python.defaultInterpreterPath": "c:\\Users\\alldr1\\Anaconda3",
-    "cSpell.enabledFileTypes": {
-      "r": false
-    },
-    "workbench.editor.enablePreview": false,
-    "accessibility.signals.terminalCommandFailed": {
-      "sound": "off",
-      "announcement": "off"
-    },
-    "quarto.render.previewType": "external",
-    "diffEditor.maxComputationTime": 0,
-    "git.openRepositoryInParentFolders": "always",
-    "snowflake.connectionsConfigFile": "C:\\Users\\alldr1\\.snowflake\\connections.toml",
-    "python.analysis.typeCheckingMode": "basic",
-    "autoDocstring.startOnNewLine": true,
-    "github.copilot.enable": {
-      "quarto": false,
-      "*": false
-    },
-    "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "workbench.editor.empty.hint": "hidden",
-    "[dockercompose]": {
-      "editor.insertSpaces": true,
-      "editor.tabSize": 2,
-      "editor.autoIndent": "advanced",
-      "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "[github-actions-workflow]": {
-      "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "journal.base": "C:\\Users\\alldr1\\Development\\Personal\\Journal",
-    "journal.templates": [
-      
-      {
-        "name": "memo",
-        "template": "- MEMO ${localTime}: ${input}", 
-        "after": "## Memos"
-      },
-      {
-        "name": "task",
-        "template": "- [] ${d:LL} - Task: ${input}",
-        "after": "## Tasks"
-      },
-      {
-        "name": "entry",
-        "template": "# ${d:dddd, MMMM DD YYYY}\n\n## Tasks\n\n## Notes\n\n## What Went Well ✅\n\n- \n\n## What Didn’t Go Well ❌:\n\n- \n\n## Learnings\n\n- \n\n"
-      },
-      {
-        "name": "time",
-        "template": "${localTime}"
-      },
-      {
-        "name": "note",
-        "template": "# ${input}\n\n${tags}\n"
-      },
-      {
-        "name": "files",
-        "template": "- NOTE: [${title}](${link})",
-        "after": "## Notes"
-      },
-      {
-        "name": "weekly",
-        "template": "# Week ${week}\n\n"
-      }
-    ]
+    "better-todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "editor.wrapOnEscapedLineFeeds": true,
+    "snowflake.autoLoginOnActivation.enabled": false,
+    "terminal.integrated.enablePersistentSessions": false
   }
